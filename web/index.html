@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Funcionários</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script type="text/javascript">
+            function carregarconsultartodos() {
+                window.location = "/NewTech/controle_funcionario?op=CONSULTAR TODOS"
+            }
+        </script>
+    </head>
+    <body>
+        <form name="controle_funcionario" action="controle_funcionario" method="GET">
+            <div><h1>Cadastro de funcionários</h1></div>
+            ID.........: <input type="text" name="txtid"><BR>
+            NOME..: <input type="text" name="txtnome"><BR>
+            EMAIL.:<input type="text" name="txtemail"><BR>
+            CARGO.:<input type="text" name="txtcargo"><BR>
+            TELEFONE.:<input type="text" name="txttelefone"><BR>
+            ENDEREÇO.:<input type="text" name="txtendereco"><BR>
+            SALARIO.:<input type="text" name="txtsalario"><BR>
+            CPF...:<input type="text" name="txtcpf"><BR>
+            CNPJ...:<input type="text" name="txtcnpj"><BR>
+            DATA DE ADMISSÃO.:<input type="text" name="txtdt_admissao"><BR>
+            DATA DE NASCIMENTO......: <input type="text" name="txtdt_nascimento"><BR><BR>
+            <input type="submit" name="op" value="CADASTRAR">
+            <input type="submit" name="op" value="DELETAR">
+            <input type="submit" name="op" value="ATUALIZAR">
+            <input type="submit" name="op" value="CONSULTAR BY ID">
+            <input type="submit" name="op" value="CONSULTAR TODOS">
+        </form>
+    </body>
+</html>
